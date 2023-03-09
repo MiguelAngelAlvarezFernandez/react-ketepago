@@ -12,6 +12,7 @@ function esImporteMonetarioValido(stringImporte) {
 }
 
 function _manejadorInputImporteMonetario(evento, setterInput, setterValorNumerico) {
+
     if (esImporteMonetarioValido(evento.target.value)) {
         setterValorNumerico(
             redondea(
@@ -21,10 +22,12 @@ function _manejadorInputImporteMonetario(evento, setterInput, setterValorNumeric
         )
         setterInput(evento.target.value)
     }
+
     if ( evento.target.value === "" ) {
         setterValorNumerico(0)
         setterInput("")
     }
+    
 }
 
 function nuevoManejadorInputMonetario(setterInput, setterValorNumerico) {

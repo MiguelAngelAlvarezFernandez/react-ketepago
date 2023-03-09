@@ -6,10 +6,13 @@ import { nuevoManejadorInputMonetario, redondea } from './lib';
 function App() {
 
   const [ inputNumeroParticipantes, setInputNumeroParticipantes ] = useState("2")
+  const [ numeroDeParticipantes, setNumeroDeParticipantes] = useState(0)
+
   const [ inputTotalAPagar, setInputTotalAPagar ] = useState("0")
   const [ totalAPagar, setTotalAPagar ] = useState(0)
-  const [ numeroDeParticipantes, setNumeroDeParticipantes] = useState(0)
+
   const [totalPorPersona, setTotalPorPersona] = useState(0)
+  
   const [elementosAportacion, setElementosAportacion] = useState([])
 
   function manejadorNumeroParticipantes(evento) {
