@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { redondea } from "../../lib"
+import "./Saldo.css"
 
 function Saldo({importe}) {
 
